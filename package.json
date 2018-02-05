@@ -1,0 +1,40 @@
+{
+    "name": "Word-Add-in-Angular2-StyleChecker",
+    "version": "1.0.1",
+    "author": "CALC Developer Education Office Add-ins Team",
+    "description": "Package for the Style Checker sample Word Add-in",
+    "scripts": {
+        "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "lint": "tslint ./app/**/*.ts -t verbose",
+        "lite": "lite-server -c bs-config.json",
+        "typings": "typings",
+        "postinstall": "typings install"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@angular/common": "~5.2.3",
+        "@angular/compiler": "~5.2.3",
+        "@angular/core": "~5.2.3",
+        "@angular/forms": "~5.2.3",
+        "@angular/http": "~5.2.3",
+        "@angular/platform-browser": "~5.2.3",
+        "@angular/platform-browser-dynamic": "~5.2.3",
+        "@angular/router": "~5.2.3",
+        "@angular/upgrade": "~5.2.3",
+        "core-js": "^2.5.3",
+        "reflect-metadata": "^0.1.12",
+        "rxjs": "5.5.6",
+        "systemjs": "0.20.19",
+        "zone.js": "^0.8.20"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "lite-server": "^2.3.0",
+        "tslint": "^5.9.1",
+        "typescript": "^2.7.1",
+        "typings": "^2.1.1"
+    },
+    "repository": {}
+}
